@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Non-Profit Organization</title>
+
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <style>
+    .hero {
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .section-padding {
+      padding: 60px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Non-Profit</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#donate">Donate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="text-center">
+      <h1 class="display-4">Make a Difference</h1>
+      <p class="lead">Join us in creating a better future for the community.</p>
+      <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section-padding bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">About Our Organization</h2>
+      <p class="lead text-center">We are a non-profit organization dedicated to improving the lives of underprivileged communities. Our mission is to provide education, healthcare, and opportunities for a better future.</p>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="mission.jpg" alt="Mission" class="img-fluid rounded-circle mb-3">
+          <h3>Our Mission</h3>
+          <p>To empower communities through sustainable projects focused on education, healthcare, and social welfare.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="vision.jpg" alt="Vision" class="img-fluid rounded-circle mb-3">
+          <h3>Our Vision</h3>
+          <p>To see a world where everyone has access to basic needs and opportunities for a better life.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="values.jpg" alt="Values" class="img-fluid rounded-circle mb-3">
+          <h3>Our Values</h3>
+          <p>We value compassion, integrity, and commitment to helping those in need.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="project1.jpg" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Education Program</h5>
+              <p class="card-text">Providing free education to children in underserved communities.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="project2.jpg" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Healthcare Initiative</h5>
+              <p class="card-text">Organizing healthcare camps to provide free medical checkups and treatments.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="project3.jpg" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">Community Development</h5>
+              <p class="card-text">Supporting small businesses and entrepreneurship in rural areas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donate Section -->
+  <section id="donate" class="section-padding bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Support Our Cause</h2>
+      <p class="lead">Your donations help us continue our mission and expand our outreach programs.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Donate Now</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <h2 class="text-center mb-5">Contact Us</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Get in Touch</h5>
+          <p>If you have any questions or want to get involved, feel free to reach out to us.</p>
+          <p>Email: <a href="mailto:info@nonprofit.org">info@nonprofit.org</a></p>
+          <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Non-Profit Organization. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
